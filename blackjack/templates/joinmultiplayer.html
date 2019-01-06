@@ -1,19 +1,18 @@
 {% extends 'header.html' %}
+
 {% block content %}
-<div class="container">
-  <h1>Join Multiplayer</h1>
-  <form method="post">
-    {% csrf_token %}
-    <br>
-    <h4>Name: </h4>
-    {{ form.name }}
-    <br><br>
-    <h4>Room: </h4>
-    {{ form.room }}
-    <br><br>
-    <input type="submit" value="Create">
-  </form>
-</div>
-
-
+  <div class="container">
+    <h1>Join Multiplayer</h1>
+    <form method="post">
+      {% csrf_token %}
+      <br>
+      <h4>Name: </h4>
+      {{ form.name }}
+      <br><br>
+      <h4>Room: </h4>
+      {{ form.room }}
+      <br><br>
+      <input type="submit" value="Create">
+    </form>
+  </div>
 {% endblock %}
