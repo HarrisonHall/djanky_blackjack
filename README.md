@@ -1,5 +1,6 @@
 # Djanky BlackJack
 Djanky BlackJack is a janky blackjack implementation in django. It is self-explanatory. 
+This was my final project for the week-long TRACE sponsored django bootcamp.
 
 ![join mulitplayer](pics/mult.png)
 
