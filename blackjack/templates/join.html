@@ -1,0 +1,15 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="container">
+  <h1 >Create Singleplayer</h1>
+  <form method="post">
+    {% csrf_token %}
+    <h4>Name: </h4>
+    {{ form.name }}
+    <br><br>
+    <input type="submit" value="Create">
+  </form>
+</div>
+
+
+{% endblock %}

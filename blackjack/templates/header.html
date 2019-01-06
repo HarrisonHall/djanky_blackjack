@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+<nav class="orange darken-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right"><i class="fab fa-houzz"></i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="{% url 'blackjack_game_create' %}"><i class="material-icons">note_add</i></a></li>
+        <li><a href="{% url 'blackjack_multiplayer_create' %}"><i class="material-icons">library_add</i></a></li>
+        <li><a href="{% url 'blackjack_joinmultiplayergame' %}"><i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a><i class="fas fa-grip-lines-vertical"></i></a></li>
+        <li><a href="https://www.google.com"><i class="fab fa-google"></i></a></li>
+        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.github.com"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+

@@ -1,0 +1,14 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="container">
+  <h1 >Create Multiplayer</h1>
+  <form method="post">
+    {% csrf_token %}
+    <h4>Number of players: </h4>
+    {{ form.num_players }}
+    <br><br>
+    <input type="submit" value="Create">
+  </form>
+</div>
+
+{% endblock %}
